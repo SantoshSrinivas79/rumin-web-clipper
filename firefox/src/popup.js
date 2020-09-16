@@ -303,7 +303,7 @@
       }
 
       $.ajax({
-        url: 'https://getrumin.com/api/v1/activities/', //'http://127.0.0.1:8000/api/v1/activities/',//'https://getrumin.com/api/v1/activities/', 
+        url: 'https://xeon.santoshsrinivas.com/api/reads/', //'http://127.0.0.1:8000/api/v1/activities/',//'https://xeon.santoshsrinivas.com/api/reads/', 
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(activityData()),
