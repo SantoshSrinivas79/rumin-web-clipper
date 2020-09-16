@@ -160,7 +160,7 @@ export const CollectionsDropdown = (props) => {
       title: query
     }
 
-    fetch(`https://getrumin.com/api/v1/spaces/`, {
+    fetch(`https://xeon.santoshsrinivas.com/api/reads/`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
