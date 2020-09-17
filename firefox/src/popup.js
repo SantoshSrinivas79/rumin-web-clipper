@@ -303,7 +303,7 @@
       }
 
       $.ajax({
-        url: 'https://xeon.santoshsrinivas.com/api/reads/', //'http://127.0.0.1:8000/api/v1/activities/',//'https://xeon.santoshsrinivas.com/api/reads/', 
+        url: 'https://n8n.santoshsrinivas.com/webhook/9/get%20form/webhook', //'http://127.0.0.1:8000/api/v1/activities/',//'https://n8n.santoshsrinivas.com/webhook/9/get%20form/webhook', 
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(activityData()),
