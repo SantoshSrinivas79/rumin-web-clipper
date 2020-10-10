@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="vendor/choices/scripts/choices.min.js"></script>
     <script src="vendor/jquery-3.4.1.min.js"></script>
+    
+    <link href="vendor/choices/styles/choices.min.css" rel="stylesheet">
     <link href="css/popup.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -41,6 +44,33 @@
         <div class="form-group">
           <div class="field-label">Note</div>
           <textarea id="captured_note_field" class="note-field form-control" placeholder="You can use braces {} to link to pages, &#10;e.g. {Economics}, {home page design}"></textarea>
+        </div>
+
+        <div class="form-group">
+          <div id="tags">
+            <label for="choices-multiple">Tags</label>
+              <select
+                class="form-control"
+                name="choices-multiple-tags"
+                id="choices-multiple-tags"
+                placeholder="Choose tags"
+                multiple
+              >
+              </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div id="add_tags">
+            <label for="choices-text-remove-button">Add tags</label>
+            <input
+              class="form-control"
+              id="choices-text-remove-button-add-tag"
+              type="text"
+              value=""
+              placeholder="Add tags"
+            />
+          </div>
         </div>
 
         <div class="form-group">

@@ -134,6 +134,7 @@ i.small-icon {
 .section-container,
 .capture-container {
 	width: 350px;
+  overflow-y: scroll;
 }
 
 .capture-container {
@@ -354,4 +355,9 @@ textarea.note-field {
 
 .collections-search:focus {
   outline: none;
+}
+
+
+#choices-multiple-remote-fetch {
+  border-color: red;
 }
