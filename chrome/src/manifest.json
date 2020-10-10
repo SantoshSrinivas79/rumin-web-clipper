@@ -13,7 +13,7 @@
         "*://*/*"
       ],
       "js": ["vendor/choices/scripts/choices.min.js", "vendor/jquery-3.4.1.min.js", "vendor/tiny-tfidf.js", "content.js"],
-      "css": ["css/content.css","vendor/choices/styles/base.min.css","vendor/choices/styles/choices.min.css"]
+      "css": ["css/content.css","vendor/choices/styles/choices.min.css"]
     }
   ],
   "browser_action": {
