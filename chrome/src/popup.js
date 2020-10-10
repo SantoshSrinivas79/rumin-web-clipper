@@ -66,11 +66,21 @@
         title = $('#captured_title_field').val();
         note = $('#captured_note_field').val();
 
+        // selected tags
+        var tags = $('#choices-multiple-tags').val();
+
+        // new tags
+        var new_tags = $('#choices-text-remove-button-add-tag').val().split(",");
+
+        var merged_tags = [...new Set([...tags,...new_tags])];
+        console.log(`merged_tags are: ${merged_tags}`);
+
         let params = {
             title: title,
             url: pageUrl,
             selection: selection,
             favicon_url: favIconUrl,
+            tags: merged_tags,
             note: note || '',
             // page_dom: page_dom,
             screenshot: $('#screenshot_img').attr('src'),
