@@ -462,6 +462,10 @@
             let existing_tags = JSON.parse(localStorage.getItem('rumin_tags'));
             console.log(existing_tags);
 
+            if(!existing_tags){
+                existing_tags = [];
+            }
+
             var tagsSelect = new Choices(
                 '#choices-multiple-tags', {
                   removeItemButton: true,
